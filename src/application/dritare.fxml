@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLDocumetnController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="login_form" layoutX="300.0" prefHeight="400.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="71.0" fitWidth="75.0" layoutX="122.0" layoutY="52.0">
+                     <image>
+                        <Image url="@../../../../OneDrive/Desktop/login.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="119.0" layoutY="139.0" text="Sign In">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="si_username" layoutX="85.0" layoutY="187.0" promptText="Username" />
+                  <Button fx:id="si_loginBtn" layoutX="81.0" layoutY="284.0" mnemonicParsing="false" onAction="#login" prefHeight="26.0" prefWidth="150.0" text="Log In">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <PasswordField fx:id="si_password" layoutX="85.0" layoutY="227.0" promptText="Password" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="sub_form" prefHeight="400.0" prefWidth="294.0" style="-fx-background-color: black;">
+               <children>
+                  <Label fx:id="edit_label" layoutX="63.0" layoutY="295.0" text="Create Account" textFill="#f7f5f5">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="sub_signupBtn" layoutX="94.0" layoutY="330.0" mnemonicParsing="false" onAction="#signupSlider" text="Sign Up">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="159.0" fitWidth="184.0" layoutX="36.0" layoutY="41.0">
+                     <image>
+                        <Image url="@../../../../OneDrive/Desktop/2f80b9ee-e563-4c2c-ab6e-85116e48842c.jfif" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="36.0" layoutY="207.0" style="-fx-alignment: center;" text="Gym Management System" textAlignment="CENTER" textFill="#efebeb">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="sub_loginBtn" layoutX="94.0" layoutY="332.0" mnemonicParsing="false" onAction="#loginSlider" prefHeight="26.0" prefWidth="68.0" text="Sign In" visible="false" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="26.0" prefWidth="600.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="close" layoutX="554.0" layoutY="6.0" mnemonicParsing="false" onAction="#close" prefHeight="27.0" prefWidth="35.0" text="X" AnchorPane.rightAnchor="10.799999999999955" AnchorPane.topAnchor="6.0">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="signup_form" prefHeight="400.0" prefWidth="300.0" visible="false">
+               <children>
+                  <TextField fx:id="su_username" layoutX="44.0" layoutY="226.0" promptText="Username" />
+                  <TextField fx:id="su_password" layoutX="44.0" layoutY="261.0" promptText="Password" />
+                  <Button fx:id="su_signupBtn" layoutX="44.0" layoutY="303.0" mnemonicParsing="false" onAction="#signup" prefHeight="26.0" prefWidth="150.0" text="Sign Up">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="91.0" fitWidth="97.0" layoutX="79.0" layoutY="50.0">
+                     <image>
+                        <Image url="@../../../../OneDrive/Desktop/OIP.jfif" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="su_email" layoutX="44.0" layoutY="187.0" promptText="Email adress" />
+                  <Label layoutX="84.0" layoutY="149.0" text="Sign Up">
+                     <font>
+                        <Font name="Bookman Old Style Bold" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
